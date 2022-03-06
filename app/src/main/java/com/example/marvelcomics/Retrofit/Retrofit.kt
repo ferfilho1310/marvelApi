@@ -6,11 +6,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 private var retrofit: Retrofit? = null
 
-const val hash = "5bff35541d3a59dbd7273c3ed23f1f8e"
-const val publicKey = "8471dc482b6dd1140e8bb074b940b8af"
-const val timesTampApiUrl = "1629245895"
+const val key = "5301688166590027"
 
-var URL = "https://gateway.marvel.com:443/v1/public/"
+var URL = "https://superheroapi.com/api/"
 
 fun getRetrofit(): Retrofit? {
     retrofit = Retrofit.Builder()

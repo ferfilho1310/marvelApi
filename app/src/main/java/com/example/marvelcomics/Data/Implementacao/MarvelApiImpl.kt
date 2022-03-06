@@ -8,8 +8,8 @@ import com.example.marvelcomics.Utils.parseResponse
 
 class MarvelApiImpl(val IMarvelApi: IMarvelApi) : MarvelApiRepository {
 
-    override suspend fun getHeroes(): Heroes {
-        val response = IMarvelApi.getListHeroes(timesTampApiUrl, publicKey, hash).parseResponse()
+    override suspend fun getHeroes(id : Int): Heroes {
+        val response = IMarvelApi.getListHeroes(key,id.toString()).parseResponse()
         return when (response) {
             is OutPut.Failure -> throw Exception()
             is OutPut.Success -> {
@@ -22,5 +22,5 @@ class MarvelApiImpl(val IMarvelApi: IMarvelApi) : MarvelApiRepository {
 }
 
 interface MarvelApiRepository {
-    suspend fun getHeroes(): Heroes
+    suspend fun getHeroes(id: Int): Heroes
 }

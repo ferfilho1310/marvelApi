@@ -1,21 +1,18 @@
 package com.example.marvelcomics.Retrofit
 
+import android.icu.util.Output
 import com.example.marvelcomics.Data.Model.HeroesResponse
-import com.example.marvelcomics.Utils.BaseResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
-import retrofit2.http.Url
-import java.sql.Timestamp
 
 interface IMarvelApi {
 
-    @GET("stories")
+    @GET("{key}/{id}/image")
     suspend fun getListHeroes(
-        @Query("ts") timestamp: String,
-        @Query("apikey") apiKey: String,
-        @Query("hash") hash: String,
+        @Path("key") key: String,
+        @Path("id") id : String
     ): Response<HeroesResponse>
 
 }

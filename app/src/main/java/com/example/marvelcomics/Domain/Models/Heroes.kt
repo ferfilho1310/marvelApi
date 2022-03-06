@@ -1,14 +1,11 @@
 package com.example.marvelcomics.Domain.Models
 
-import com.example.marvelcomics.Data.Model.Data
+import com.google.gson.annotations.SerializedName
 
 data class Heroes(
-    var code: String,
-    var status: String,
-    var copyright: String,
-    var attributionText: String,
-    var attributionHTML: String,
-    var data: Data,
-    var etag: String
+    var response : String,
+    var id : String,
+    var name : String,
+    var url : String
 )
 

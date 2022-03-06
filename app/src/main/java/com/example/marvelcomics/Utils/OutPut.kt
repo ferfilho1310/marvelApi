@@ -5,7 +5,7 @@ import java.net.HttpURLConnection
 
 sealed class OutPut<out Response> {
     data class Success<Response> (val value : Response): OutPut<Response>()
-    data class Failure(val statusCode: Int): OutPut<Nothing>()
+    data class Failure(val error: Throwable): OutPut<Nothing>()
 }
 
 fun <R : Any> Response<R>.parseResponse(): OutPut<R> {
@@ -16,8 +16,8 @@ fun <R : Any> Response<R>.parseResponse(): OutPut<R> {
             return OutPut.Success(body)
         }
     } else {
-        return OutPut.Failure(code())
+        return OutPut.Failure(Exception())
 
     }
-    return OutPut.Failure(HttpURLConnection.HTTP_INTERNAL_ERROR)
+    return OutPut.Failure(Exception())
 }
