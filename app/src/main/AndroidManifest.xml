@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MarvelComics">
         <activity
-            android:name=".Presenter.Activity.MainActivity"
+            android:name=".presenter.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

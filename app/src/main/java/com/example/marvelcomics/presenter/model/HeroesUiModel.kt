@@ -1,6 +1,6 @@
-package com.example.marvelcomics.Presenter.Model
+package com.example.marvelcomics.presenter.model
 
-import com.example.marvelcomics.Domain.Models.Heroes
+import com.example.marvelcomics.domain.models.Heroes
 
 class HeroesUiModel(
     var id : String,

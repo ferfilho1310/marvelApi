@@ -1,7 +1,7 @@
-package com.example.marvelcomics.Domain.UseCases
+package com.example.marvelcomics.domain.useCases
 
-import com.example.marvelcomics.Data.MarvelApiRepository
-import com.example.marvelcomics.Domain.Models.Heroes
+import com.example.marvelcomics.data.MarvelApiRepository
+import com.example.marvelcomics.domain.models.Heroes
 
 
 

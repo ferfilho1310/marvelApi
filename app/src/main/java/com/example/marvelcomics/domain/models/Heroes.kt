@@ -1,6 +1,4 @@
-package com.example.marvelcomics.Domain.Models
-
-import com.google.gson.annotations.SerializedName
+package com.example.marvelcomics.domain.models
 
 data class Heroes(
     var response : String,

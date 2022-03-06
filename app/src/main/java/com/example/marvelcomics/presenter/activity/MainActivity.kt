@@ -1,4 +1,4 @@
-package com.example.marvelcomics.Presenter.Activity
+package com.example.marvelcomics.presenter.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,11 +6,11 @@ import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.marvelcomics.Presenter.Adapter.HeroesAdapter
-import com.example.marvelcomics.Presenter.Model.HeroesUiModel
-import com.example.marvelcomics.Presenter.ViewModel.GetHeroesViewModel
+import com.example.marvelcomics.presenter.adapter.HeroesAdapter
+import com.example.marvelcomics.presenter.model.HeroesUiModel
+import com.example.marvelcomics.presenter.viewModel.GetHeroesViewModel
 import com.example.marvelcomics.R
-import com.example.marvelcomics.Utils.OutPut
+import com.example.marvelcomics.utils.OutPut
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {

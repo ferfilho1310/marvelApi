@@ -1,11 +1,9 @@
-package com.example.marvelcomics.Retrofit
+package com.example.marvelcomics.retrofit
 
-import android.icu.util.Output
-import com.example.marvelcomics.Data.Model.HeroesResponse
+import com.example.marvelcomics.data.model.HeroesResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
-import retrofit2.http.Query
 
 interface IMarvelApi {
 

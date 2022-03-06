@@ -1,12 +1,12 @@
-package com.example.marvelcomics.Presenter.ViewModel
+package com.example.marvelcomics.presenter.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.marvelcomics.Domain.UseCases.GetHeroesUseCase
-import com.example.marvelcomics.Presenter.Model.HeroesUiModel
-import com.example.marvelcomics.Presenter.Model.toHereosUiModel
-import com.example.marvelcomics.Utils.OutPut
+import com.example.marvelcomics.domain.useCases.GetHeroesUseCase
+import com.example.marvelcomics.presenter.model.HeroesUiModel
+import com.example.marvelcomics.presenter.model.toHereosUiModel
+import com.example.marvelcomics.utils.OutPut
 import kotlinx.coroutines.launch
 
 class GetHeroesViewModel(val getHeroes: GetHeroesUseCase) : ViewModel() {

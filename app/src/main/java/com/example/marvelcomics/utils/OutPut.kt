@@ -1,7 +1,6 @@
-package com.example.marvelcomics.Utils
+package com.example.marvelcomics.utils
 
 import retrofit2.Response
-import java.net.HttpURLConnection
 
 sealed class OutPut<out Response> {
     data class Success<Response> (val value : Response): OutPut<Response>()

@@ -1,10 +1,10 @@
-package com.example.marvelcomics.Data
+package com.example.marvelcomics.data
 
-import com.example.marvelcomics.Data.Model.toHeroesResponse
-import com.example.marvelcomics.Domain.Models.Heroes
-import com.example.marvelcomics.Retrofit.*
-import com.example.marvelcomics.Utils.OutPut
-import com.example.marvelcomics.Utils.parseResponse
+import com.example.marvelcomics.data.model.toHeroesResponse
+import com.example.marvelcomics.domain.models.Heroes
+import com.example.marvelcomics.retrofit.*
+import com.example.marvelcomics.utils.OutPut
+import com.example.marvelcomics.utils.parseResponse
 
 class MarvelApiImpl(val IMarvelApi: IMarvelApi) : MarvelApiRepository {
 

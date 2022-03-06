@@ -1,11 +1,11 @@
-package com.example.marvelcomics.Presenter.Adapter
+package com.example.marvelcomics.presenter.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.marvelcomics.Presenter.Model.HeroesUiModel
-import com.example.marvelcomics.Presenter.ViewModel.GetHeroesViewModel
+import com.example.marvelcomics.presenter.model.HeroesUiModel
+import com.example.marvelcomics.presenter.viewModel.GetHeroesViewModel
 import com.example.marvelcomics.R
 
 class HeroesAdapter(val context : Context, val viemModel : GetHeroesViewModel) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {

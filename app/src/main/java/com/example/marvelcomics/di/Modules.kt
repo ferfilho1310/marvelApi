@@ -1,14 +1,14 @@
 package com.example.marvelcomics.di
 
-import com.example.marvelcomics.Data.MarvelApiImpl
-import com.example.marvelcomics.Data.MarvelApiRepository
-import com.example.marvelcomics.Domain.UseCases.GetHeroes
-import com.example.marvelcomics.Domain.UseCases.GetHeroesUseCase
-import com.example.marvelcomics.Presenter.Activity.MainActivity
-import com.example.marvelcomics.Presenter.ViewModel.GetHeroesViewModel
-import com.example.marvelcomics.Retrofit.IMarvelApi
-import com.example.marvelcomics.Retrofit.getRetrofit
-import com.example.marvelcomics.Retrofit.provideApiMarvel
+import com.example.marvelcomics.data.MarvelApiImpl
+import com.example.marvelcomics.data.MarvelApiRepository
+import com.example.marvelcomics.domain.useCases.GetHeroes
+import com.example.marvelcomics.domain.useCases.GetHeroesUseCase
+import com.example.marvelcomics.presenter.activity.MainActivity
+import com.example.marvelcomics.presenter.viewModel.GetHeroesViewModel
+import com.example.marvelcomics.retrofit.IMarvelApi
+import com.example.marvelcomics.retrofit.getRetrofit
+import com.example.marvelcomics.retrofit.provideApiMarvel
 import org.koin.dsl.module
 
 object Modules {

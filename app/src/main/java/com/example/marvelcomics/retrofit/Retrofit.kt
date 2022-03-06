@@ -1,4 +1,4 @@
-package com.example.marvelcomics.Retrofit
+package com.example.marvelcomics.retrofit
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
